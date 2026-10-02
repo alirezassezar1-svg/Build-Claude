@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export ADMIN=/home/nononick/public_html/admin-os/
+    - export SITE=/home/nononick/public_html/build-site/
+    - /bin/mkdir -p $ADMIN $SITE
+    - /bin/cp index.html $ADMIN
+    - /bin/cp -R site/. $SITE
